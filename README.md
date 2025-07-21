@@ -45,7 +45,10 @@ su # or sudo su
 # Caveats
 This script assumes you are using the linux lts kernel.
 
-This does not download the latest linux lts kernel packages, at the moment I use a docker container to get them (pacman does not work because it needs the archzfs repo which I can't use for reasons (I'm too lazy to figure out how to add the custom repo to my pacman cache server)) but I may update this script to download the latest kernel packages if I figure out a neat way to do so.
+This does not download the latest linux lts kernel packages, at the moment I use a docker container https://github.com/megagaming21/podman_archlinux_getkernel/tree/main
+to get them (pacman does not work because it needs the archzfs repo which I can't use for reasons (I'm too lazy to figure out how to add the custom repo to my pacman cache server https://github.com/megagaming21/podman-create-flexo))
+
+but I may update this script to download the latest kernel packages if I figure out a neat way to do so.
 
 The "lts" kernel is the one I only ever use, you can fork/modify this script for the other kernel types if you need them.
 
