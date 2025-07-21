@@ -1,3 +1,17 @@
+Download the script.
+git clone https://github.com/megagaming21/archzfs-updater.git
+
+cd archzfs-updater
+
+Make the .sh files executable
+chmod +x *.sh
+
+Download the latest archzfs packages.
+./1_download_new.sh
+
+Install the downloaded archzfs packages.
+./2_install_new.sh
+
 This does not download the latest linux lts kernel packages, at the moment I use a docker container to get them (pacman does not work because it needs the archzfs repo which I can't use for reasons (I'm too lazy to figure out how to add the custom repo to my pacman cache server)) but I may update this script to download the latest kernel packages if I figure out a neat way to do so.
 
 The "lts" kernel is the one I only ever use, you can fork/modify this script for the other kernel types if you need them.
