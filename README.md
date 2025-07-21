@@ -11,7 +11,7 @@ This script should help with updating ZFS on archlinux as long as the filenames 
 
 # Usage
 ```bash
-# The install script assumes it is run archlinux as it uses pacman.
+# The install script assumes it is run in archlinux as it uses pacman.
 
 # Download the script.
 git clone https://github.com/megagaming21/archzfs-updater.git
@@ -25,6 +25,10 @@ chmod +x *.sh
 # Inspect the script files before running them
 cat ./1_download_new.sh | less
 cat ./2_install_new.sh | less
+
+# You should change the download directory variable on both script files.
+nano ./1_download_new.sh
+nano ./2_install_new.sh
 
 # Become the root user
 su # or sudo su
