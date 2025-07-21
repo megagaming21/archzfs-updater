@@ -13,6 +13,8 @@ This script should help with updating ZFS on archlinux as long as the filenames 
 ```bash
 # The install script assumes it is run in archlinux as it uses pacman.
 
+# You can download the scripts to the /opt/ directory and add them to your $PATH to use the scripts as a command without needing to use the full filepath or change directories.
+
 # Download the script.
 git clone https://github.com/megagaming21/archzfs-updater.git
 
