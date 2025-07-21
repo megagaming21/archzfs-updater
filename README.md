@@ -1,16 +1,18 @@
 # About
-Bash scripts that I use to update archzfs ZFS packages in my archlinux servers without needing to add the archzfs custom repo.
+Bash scripts that I use to install/update ZFS in my archlinux servers without needing to add the archzfs custom repo.
 
-The download script works by downloading a file named "archzfs.db from the archzfs github download url"
+The download script works by downloading a file named "archzfs.db" from the archzfs github download url.
 
 This archzfs.db file contains a list of the zfs package filenames and other important information like the linux and zfs version of the packages.
 
-Using bash scripting, the correct package name and version is stored in a variable which is then used to download and install the zfs package.
+Using bash scripting logic, the correct package name and version is stored in a variable which is then used to download and install the archzfs package.
 
-This script should help with updating zfs on archlinux as long as the filenames do not change in a way that breaks the script.
+This script should help with updating ZFS on archlinux as long as the filenames in the archzfs repo do not end up changing in a way that breaks the script.
 
 # Usage
 ```bash
+# The install script assumes it is run archlinux as it uses pacman.
+
 # Download the script.
 git clone https://github.com/megagaming21/archzfs-updater.git
 
